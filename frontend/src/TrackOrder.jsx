@@ -1,0 +1,10 @@
+import React, { useMemo, useState } from 'react'
+import { Link, useParams, useLocation } from 'react-router-dom'
+import { Search, Heart, ShoppingBag, ArrowUpRight, ArrowRight, Truck, ShieldCheck, Gift, Headset, Plus, Minus, Check, PackageSearch } from 'lucide-react'
+import { products, categories, money } from './data'
+import SEO from './SEO'
+import { useStore, imgFallback } from './shared'
+import { Footer } from './Layout'
+function TrackOrder(){const [order,setOrder]=useState('');const [email,setEmail]=useState('');const [submitted,setSubmitted]=useState(false);return <><SEO title="Track My Order" description="Check your Lumière order status and delivery updates." path="/track-order"/><main className="page-wrap track-page"><div className="track-copy"><span className="eyebrow">DELIVERY, MADE SIMPLE</span><h1>Track your<br/><em>order.</em></h1><p>Enter your order details to check your delivery status.</p><form onSubmit={e=>{e.preventDefault();setSubmitted(true)}}><label>Order Number<input required value={order} onChange={e=>setOrder(e.target.value)} placeholder="e.g. LUM-10245"/></label><label>Email or Phone Number<input required value={email} onChange={e=>setEmail(e.target.value)} placeholder="Used at checkout"/></label><button className="btn btn-dark btn-full">TRACK ORDER <ArrowRight size={15}/></button></form>{submitted&&<div className="tracking-note"><PackageSearch/><div><strong>Tracking integration required</strong><p>We received your lookup details in this demo. Connect your order database and courier provider API to show verified shipment updates.</p></div></div>}</div><div className="track-image"><img src="https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&fit=crop&w=1200&q=90" alt="Lumière jewellery packaging ready for delivery" onError={e=>e.currentTarget.src=imgFallback}/></div><div className="track-steps">{[['01','Order placed'],['02','Preparing your piece'],['03','On its way'],['04','Delivered']].map(([n,t])=><div key={n}><span>{n}</span><strong>{t}</strong></div>)}</div></main><Footer/></>}
+
+export default TrackOrder
