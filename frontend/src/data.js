@@ -1,0 +1,17 @@
+export const products = [
+ {id:'p1',name:'Sculptural Drop Earrings',category:'Earrings',price:1299,tag:'Bestseller',finish:'Gold Tone',material:'Fashion jewellery alloy',image:'https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=900&q=85',alt:'Sculptural gold-tone drop earrings on a warm neutral background',description:'A modern statement silhouette with softly sculpted curves.'},
+ {id:'p2',name:'Pearl Poise Earrings',category:'Earrings',price:999,tag:'New arrival',finish:'Gold Tone',material:'Fashion jewellery alloy and imitation pearl',image:'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=85',alt:'Elegant pearl and gold-tone earrings',description:'A graceful balance of luminous pearl-inspired detail and warm metal.'},
+ {id:'p3',name:'Twisted Statement Ring',category:'Rings',price:1199,tag:'Bestseller',finish:'Gold Tone',material:'Fashion jewellery alloy',image:'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=85',alt:'Sculptural gold-tone statement ring',description:'A bold, fluid form designed to bring a polished finish to your look.'},
+ {id:'p4',name:'Minimal Pendant Necklace',category:'Necklaces',price:1299,tag:'New arrival',finish:'Gold Tone',material:'Fashion jewellery alloy',image:'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=85',alt:'Minimal pendant necklace in gold tone',description:'A delicate everyday layer with a refined, understated profile.'},
+ {id:'p5',name:'Classic Chain Bracelet',category:'Bracelets',price:799,tag:'',finish:'Gold Tone',material:'Fashion jewellery alloy',image:'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=85',alt:'Classic gold-tone chain bracelet',description:'A timeless chain bracelet made for effortless styling.'},
+ {id:'p6',name:'Golden Hour Hoops',category:'Earrings',price:899,tag:'',finish:'Gold Tone',material:'Fashion jewellery alloy',image:'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=900&q=85',alt:'Polished gold-tone hoop earrings',description:'Sleek hoops that move easily from daytime to evening.'},
+ {id:'p7',name:'Layered Link Necklace',category:'Necklaces',price:1499,tag:'Bestseller',finish:'Gold Tone',material:'Fashion jewellery alloy',image:'https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=85',alt:'Layered gold-tone link necklace',description:'A contemporary chain with a confident, editorial finish.'},
+ {id:'p8',name:'Everyday Cuff Bangle',category:'Bracelets',price:999,tag:'',finish:'Gold Tone',material:'Fashion jewellery alloy',image:'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=900&q=85',alt:'Minimal gold-tone cuff bangle',description:'A clean sculptural cuff that pairs beautifully with a watch or stack.'},
+]
+export const categories = [
+ {name:'Earrings',copy:'Sculptural forms, everyday icons.',image:products[0].image},
+ {name:'Rings',copy:'Modern silhouettes made to stack.',image:products[2].image},
+ {name:'Bracelets',copy:'Refined details for every gesture.',image:products[4].image},
+ {name:'Necklaces',copy:'Layers that feel unmistakably yours.',image:products[3].image},
+]
+export const money = n => new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',maximumFractionDigits:0}).format(n)
