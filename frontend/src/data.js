@@ -14,4 +14,12 @@ export const categories = [
  {name:'Bracelets',copy:'Refined details for every gesture.',image:products[4].image},
  {name:'Necklaces',copy:'Layers that feel unmistakably yours.',image:products[3].image},
 ]
+
+export const collections = [
+ {slug:'everyday-elegance',title:'Everyday Elegance',kicker:'THE DAILY SIGNATURE',description:'Quietly distinctive pieces for the rituals, moments and little occasions that make a day your own.',image:'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1800&q=90',alt:'Delicate gold-tone jewellery styled in soft warm light',productIds:['p2','p4','p5','p6','p8']},
+ {slug:'statement-pieces',title:'Statement Pieces',kicker:'MAKE AN ENTRANCE',description:'Sculptural silhouettes and confident details, designed to bring a considered point of view to your look.',image:'https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1800&q=90',alt:'Bold gold-tone statement jewellery in an editorial composition',productIds:['p1','p3','p7']},
+ {slug:'the-layering-edit',title:'The Layering Edit',kicker:'A STUDY IN LAYERS',description:'Chains, delicate details and effortless accents that invite you to mix, match and make them your own.',image:'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1800&q=90',alt:'Layered necklaces and delicate jewellery on a neutral background',productIds:['p4','p7','p5','p8']},
+ {slug:'evening-edit',title:'Evening Edit',kicker:'AFTER HOURS, REFINED',description:'Polished finishing touches for dinner reservations, celebrations and evenings that deserve a little more.',image:'https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=1800&q=90',alt:'Elegant statement earrings and jewellery for evening styling',productIds:['p1','p2','p3','p7']},
+]
+
 export const money = n => new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',maximumFractionDigits:0}).format(n)

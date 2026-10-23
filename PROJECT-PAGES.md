@@ -1,17 +1,17 @@
-# Lumière — Requested Page Structure
+# Lumière Page Structure
 
-The public website is limited to the pages requested by the client:
+- `/` — Home
+- `/shop` — Full jewellery catalogue with filters, sorting, wishlist, Add to Bag and Buy Now
+- `/collections` — Editorial collection landing page with four curated banners and Explore Collection buttons; no catalogue grid or cart actions on this page
+- `/collections/everyday-elegance` — Curated product list
+- `/collections/statement-pieces` — Curated product list
+- `/collections/the-layering-edit` — Curated product list
+- `/collections/evening-edit` — Curated product list
+- `/product/:id` — Product detail, Add to Bag and Buy Now
+- `/cart` — Shared shopping bag
+- `/checkout` — Checkout interface
+- `/story` — Brand story
+- `/contact` — Contact and enquiries
+- `/track-order` — Order tracking interface
 
-1. `/` — Home
-2. `/shop` — Shop All with search, category/price filters and sorting
-3. `/collections` — Earrings, Rings, Bracelets and Necklaces collections
-4. `/product/:id` — Product details, photography, price, materials and Add to Bag
-5. `/cart` — Shopping bag and order summary
-6. `/checkout` — Delivery address and payment step interface
-7. `/story` — Our Story
-8. `/contact` — Contact Us
-9. `/track-order` — Track My Order
-
-The cart and checkout are separate routes within the requested “Shopping Bag & Checkout” journey. Category navigation is handled through Shop All filters and the Collections page; no separate category pages are included.
-
-Replace the example domain in SEO configuration, `robots.txt`, and `sitemap.xml` before launch. Live payments, authentication and courier tracking require provider credentials and server-side integration.
+Shop All and Collections are intentionally different routes and different layouts. Collection detail pages filter the shared product inventory by curated product IDs.

@@ -56,3 +56,15 @@ npm run preview
 - **Authentication:** admin route is a development starter, not production-secure. Add authentication, role checks, rate limiting, validation, audit logs and secure session/token handling before deployment.
 - **Courier tracking:** tracking page is a UI starter. Connect your chosen courier API and verify tracking numbers server-side.
 - **Images:** sample image URLs are remote Unsplash source URLs for design preview. Replace with licensed product photography or your own optimised WebP/AVIF assets before launch.
+
+## Shopping actions and motion
+- Product cards include Add to Bag and Buy Now actions.
+- Product detail pages include quantity selection, Add to Bag and Buy Now.
+- Luxury motion includes restrained entrance fades, staggered product/category reveals, image hover zoom, subtle lift, and reduced-motion support.
+- Main navigation contains the requested storefront pages only; category links filter Shop All rather than creating additional primary navigation pages.
+
+## Collection routing
+- `/shop` is the complete catalogue with category/price filters, search, sorting and product wishlist/Add to Bag actions.
+- `/collections` is an editorial landing page only; it does not render the full product catalogue or Add to Bag buttons.
+- `/collections/everyday-elegance`, `/collections/statement-pieces`, `/collections/the-layering-edit`, and `/collections/evening-edit` each show only mapped products from the shared `products` inventory, with prices and Add to Bag/Buy Now actions.
+- All collection products use the same shared cart state and inventory source as Shop All.
