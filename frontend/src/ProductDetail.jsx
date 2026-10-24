@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react'
-import { Link, useParams, useLocation } from 'react-router-dom'
+import { Link, useParams, useNavigate } from 'react-router-dom'
 import { Search, Heart, ShoppingBag, ArrowUpRight, ArrowRight, Truck, ShieldCheck, Gift, Headset, Plus, Minus, Check, PackageSearch } from 'lucide-react'
 import { products, categories, money } from './data'
 import SEO from './SEO'
