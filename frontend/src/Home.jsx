@@ -17,7 +17,7 @@ function Home(){
       {/* Mobile portrait image */}
       <source
         media="(max-width: 768px)"
-        srcSet="/images/jwell-mobile.png"
+        srcSet="/images/jwellMobile.png"
       />
 
       {/* Desktop image */}
